@@ -1,8 +1,148 @@
-index.html
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164581958-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164581958-1');
+</script>
+
+<!-- TODO:    
+        1. Align input and recon. error in MLMIR section.
+        2. Additional info in intro? - Newspaper cuttings etc.
+        3. Update ISBI section once the result is announced.
+        4. REFUGE Paper 
+        5. Recent Announcements?
+        6. Description for each paper -->
+    
+  <title>Ananth Kalyanasundaram</title>
+  
+  <meta name="author" content="Ananth Kalyanasundaram">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/srm-logo.png">
+</head>
+
 <body>
-<h1>Ananth's blog</h1>
-<p>Check out my projects <a href="www.github.com/AnanthK1998/">here</a>.</p>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Ananth Kalyanasundaram</name>
+              </p>
+              <p>I am currently a final year student pursuing a B.Tech degree in Computer Science and Engineering at <a href="https://www.srmist.edu.in">SRM Institute of Science and Technology, Kattankulathur, Chennai. I am currently working as a Research Intern (Computer Vision) at the Department of Translational Medicene and Research at SRM Medical College and Research Centre.
+              </p>
+              <p>
+                Previously, I was a Research Intern at <a href="https://hticiitm.org">Healthcare Technology Innovation Centre(HTIC)</a>, IIT Madras, where I was part of the Image Computing group, pursuing research in Deep Learning and Computer Vision for Medical Imaging. 
+              </p>
+              <p>
+                I am a pianist with a Grade 4 certification. I am really passionate about football and am a big fan of Chelsea Football Club. I am also very interested in playing MOBA games and RPGs such as League of Legends (Tier-Bronze IV).
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:ananth.kalyanasundaram@gmail.com">Email</a> &nbsp/&nbsp
+                <a href="data/Ananth_CV.pdf">CV</a> &nbsp/&nbsp
+                <!--<a href="https://scholar.google.com/citations?hl=en&user=-nFsfXsAAAAJ">Google Scholar</a> &nbsp/&nbsp -->
+                <a href="https://github.com/AnanthK1998">Github</a> &nbsp/&nbsp  
+                <a href="https://www.linkedin.com/in/ananth2603/"> LinkedIn </a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/ananth.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/ananth.png" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <p>
+                My main research interests lie in designing deep learning archictecture models capable of achieving high accuracy while occupying less memory. I am currently conducting research to solve data imbalance problems that arise during the task of semantic segmentation. My end goal is to apply these deep learning architectures to solve real life problems, like autonomous driving and faster diagnosis in healthcare, and create high quality products.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            
+            <!-- EMBC 2020 -->
+            <tr onmouseout="embc_stop()" onmouseover="embc_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='embc_image'><img src='images/embc_after.jpg' width="80%" height="80%"></div>
+                <img src='images/embc_before.jpg' width="80%" height="80%">
+              </div>
+              <script type="text/javascript">
+                function embc_start() {
+                  document.getElementById('embc_image').style.opacity = "1";
+                }
+                function embc_stop() {
+                  document.getElementById('embc_image').style.opacity = "0";
+                }
+                embc_stop()
+              </script>
+            </td>
+            <td width="75%" valign="middle">
+              <a>
+                <papertitle>MRI Super-Resolution using Laplacian Pyramid Convolutional Neural Networks with Isotropic Undecimated Wavelet Loss</papertitle>
+              </a>
+              <br>
+                <a href="https://in.linkedin.com/in/sriprabha-r-772b592b">Sriprabha Ramanarayanan</a>, <a href="https://bala93.github.io/">Balamurali Murugesan</a>, <strong>Ananth Kalyanasundaram</strong>, <a href="https://www.linkedin.com/in/surya-prabhakaran/">Surya Prabhakaran</a>, <a href=https://scholar.google.com/citations?user=IUk8C0MAAAAJ&hl=en>Keerthi Ram</a>, <a href=https://scholar.google.com/citations?user=8FDYMQ8AAAAJ&hl=en>Shantanu Patil</a>, <a href=http://www.ee.iitm.ac.in/~mohan/>Mohanasankar Sivaprakasam</a>
+              <br>
+              <em>EMBC</em> 2020 (Accepted)
+              <br>
+              <a href="data/EMBC20_2014_FI.pdf">Paper</a> /
+              <a>Code (Available soon) </a>
+            </td>
+            </tr>
+            
+            
+            <!-- ICCET 2020  -->
+            
+            <tr onmouseout="iccet_stop()" onmouseover="iccet_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='iccet_image'><img src='images/iccet2.jpg' width="80%" height="80%"></div>
+                <img src='images/iccet1.jpg' width="80%" height="80%">
+              </div>
+              <script type="text/javascript">
+                function iccet_start() {
+                  document.getElementById('iccet_image').style.opacity = "1";
+                }
+                function iccet_stop() {
+                  document.getElementById('iccet_image').style.opacity = "0";
+                }
+                iccet_stop()
+              </script>
+            </td>
+                
+            <td width="75%" valign="middle">
+              <a>
+                <papertitle>Detection of Pathological Myopia by Convolutional Neural Network</papertitle>
+              </a>
+              <br>
+                <strong>Ananth Kalyanasundaram</strong>, <a href="https://www.linkedin.com/in/surya-prabhakaran/">Surya Prabhakaran</a>, Briskilal.J, Senthil Kumar D.
+              <br>
+              <em>MLMI Workshop, MICCAI</em> 2019 (Poster)
+              <br>
+              <a href="data/PALM_final.pdf">Paper</a> /
+              <a href="https://github.com/AnanthK1998/PALM-Challenge">Code</a> /
+              
+              
+            </td>
+            </tr>
+            
+            
+        
+      </td>
+    </tr>
+  </table>
+    <p align="right">Thanks for the template, <a href="https://jonbarron.info/" target="_blank">Jon Barron!</a></p>
 </body>
+
 </html>
