@@ -169,6 +169,36 @@
               
             </td>
             </tr>
+            <!-- Cancer Cellularity  -->
+            
+            <tr onmouseout="cancer_stop()" onmouseover="cancer_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='cancer_image'><img src='images/cancer.jpg' width="80%" height="80%"></div>
+                <img src='images/cancer1.jpg' width="80%" height="80%">
+              </div>
+              <script type="text/javascript">
+                function cancer_start() {
+                  document.getElementById('cancer_image').style.opacity = "1";
+                }
+                function cancer_stop() {
+                  document.getElementById('cancer_image').style.opacity = "0";
+                }
+                cancer_stop()
+              </script>
+            </td>
+                
+            <td width="75%" valign="middle">
+                <papertitle>Cancer Cellularity Prediction using Deep Learning</papertitle>
+              <br>
+              <em>Project</em>
+              <br>
+              <p>This project was done towards the BreastPathQ challenge held as part of the SPIE Medical Imaging 2019 conference. The task was to predict cancer cellularity from a given image of a tissue containing cancer cells. This project helps diagnoise how well a cancer patient's body has responded to chemotherapy. This project helps predict cancer cellularity within a minute whereas conventional methods take hours.<br>
+              <a href="https://github.com/AnanthK1998/BreastPathQ">Code</a>
+              </p>
+              
+            </td>
+            </tr>
             
             
         
