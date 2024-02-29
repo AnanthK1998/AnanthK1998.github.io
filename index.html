@@ -31,7 +31,7 @@
               <p style="text-align:center">
                 <name>Ananth Kalyanasundaram</name>
               </p>
-              <p>I am a Masters in Computer Science student at the <a href="https://www.tum.de">Technical University of Munich</a>. I graduated with a Bachelors in Technology (Computer Science and Engineering) degree from <a href="https://www.srmist.edu.in">SRM Institute of Science and Technology, Kattankulathur, Chennai</a>. I am also working as a Research Intern at Michigan State University under <a href="http://hal.cse.msu.edu/team/vishnu-boddeti/">Professor Vishnu Boddeti</a>.
+              <p>I am a Masters in Computer Science student at the <a href="https://www.tum.de">Technical University of Munich</a>, currently doing my thesis under <a href ="https://www.niessnerlab.org/members/matthias_niessner/profile.html"></a>Prof. Dr. Matthias Niessner</a>. I graduated with a Bachelors in Technology (Computer Science and Engineering) degree from <a href="https://www.srmist.edu.in">SRM Institute of Science and Technology, Kattankulathur, Chennai</a>. I am also worked as a Research Intern at Michigan State University under <a href="http://hal.cse.msu.edu/team/vishnu-boddeti/">Professor Vishnu Boddeti</a>.
               </p>
               <p>
                 Previously, I was a Research Intern at <a href="https://hticiitm.org">Healthcare Technology Innovation Centre(HTIC)</a>, IIT Madras, where I was part of the Image Computing group, pursuing research in Deep Learning and Computer Vision for Medical Imaging. I have also worked as a Research intern at the Department of Translational Medicine and Research at my university, working on Image Super-Resolution and Segmentation problems.
@@ -57,12 +57,78 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                My main research interests lie in 3D Scene Reconstruction from a single RGB image. I am also interested in 3D Panoptic segmentation and exploring the relationship between the 2D image space and the 3D voxel space.
+                Broadly, I work in the field of Computer Vision and Deep Learning. My interests lie in 3D Reconstruction and Neural Rendering.
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            
+            <!-- Inverse Rendering  -->
+            <tr onmouseout="inverse_stop()" onmouseover="inverse_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='inverse_image'><img src='images/inverse.png' width="80%" height="80%"></div>
+                <img src='images/inverse1.png' width="80%" height="80%">
+              </div>
+              <script type="text/javascript">
+                function inverse_start() {
+                  document.getElementById('inverse_image').style.opacity = "1";
+                }
+                function inverse_stop() {
+                  document.getElementById('inverse_image').style.opacity = "0";
+                }
+                semantic3d_stop()
+              </script>
+            </td>
+
+            <td width="75%" valign="middle">
+              <papertitle>Shape, Light and Neural Material Decomposition using Monte-Carlo Rendering and Diffusion Denoising</papertitle>
+            <br>
+              <strong>Ananth Kalyanasundaram</strong>, Simeng Li, Soumya Mondal, Surya Prabhakaran, Jonathan Schmidt
+            <br>
+            <em>Project</em>
+            <br>
+            <p>This project was done as the 3D Scanning and Spatial Learning course held by TUM Visual Computing group.<br>
+            </p>
+            <a href="data/3DSSL.pdf">Report</a> /
+            
+            
+            </td>
+            </tr>
+          
+            <!-- TextDiff  -->
+            <tr onmouseout="textdiff_stop()" onmouseover="textdiff_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='textdiff_image'><img src='images/textdiff1.png' width="80%" height="80%"></div>
+                <img src='images/textdiff.png' width="80%" height="80%">
+              </div>
+              <script type="text/javascript">
+                function textdiff_start() {
+                  document.getElementById('textdiff_image').style.opacity = "1";
+                }
+                function textdiff_stop() {
+                  document.getElementById('textdiff_image').style.opacity = "0";
+                }
+                semantic3d_stop()
+              </script>
+            </td>
+
+            <td width="75%" valign="middle">
+              <papertitle>Text-DiffScene: Text-driven 3D Scene Synthesis with Permutation Equivariant Graph Diffusion</papertitle>
+            <br>
+              <strong>Ananth Kalyanasundaram</strong>
+            <br>
+            <em>Project</em>
+            <br>
+            <p>This project was done as the Guided Research course held by TUM Visual Computing group.<br>
+            </p>
+            <a href="data/GR_report.pdf">Report</a> /
+            
+            
+            </td>
+            </tr>
             <!-- Semantic3D  -->
             
             <tr onmouseout="semantic3d_stop()" onmouseover="semantic3d_start()">
@@ -81,6 +147,7 @@
                 semantic3d_stop()
               </script>
             </td>
+
                 
             <td width="75%" valign="middle">
                 <papertitle>3D Semantic Reconstruction from a single RGB Image</papertitle>
